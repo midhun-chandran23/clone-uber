@@ -1,0 +1,238 @@
+body{
+    background: #1f1f1f;
+  }
+  .navbar{
+    left: 0;
+    right: 0;
+    
+  }
+  #uberlogohover{
+    color: aliceblue;
+  }
+  #uberlogohover:hover{
+    color: red;
+    transition: all .5s linear;
+  }
+  
+  .hover-bg:hover{
+    background:rgb(51, 51, 51);
+    border-radius:1rem;
+    transition: all .3s linear;
+  }
+  .heading h1{
+    font-size: 4.2rem;
+  }
+      .poster-relative-position {
+        max-width: 800px;
+        top: 10%;
+        margin: 0 5rem;
+        left: 0;
+        right: 0;
+      }
+  
+  .form-section-btn button{
+    padding: .8rem;
+    font-size: 1.2rem;
+  }
+  #signuphover:hover{
+    background-color: #626060a7;
+    
+  }
+  #signup-section-page{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    
+  }
+
+
+  .signup-wrapper-box1{
+    margin-top: 7rem;
+  }
+
+
+
+  .inp-col{
+    background:rgb(246, 246, 246) ;
+    border: none;
+    
+  }
+  
+  .deliver-section{
+    display: none;
+  }
+  .form-section-btn{
+    display: block;
+  }
+  .schedule-btn{
+    background:rgb(226, 226, 226);
+  }
+  .inp-col::placeholder{
+    font-size:1.2rem;
+  }
+  .icon-section{
+   border: 1px solid rgb(255, 255, 255);
+   padding: 1rem;
+   border-radius: 12px;
+  }
+  
+  .icon-section:hover{
+    background: rgb(123, 120, 120);
+    color: white;
+    
+  
+  }
+  #white-img{
+    display: none;
+  }
+  
+  .footer-section{
+    display: flex;
+    flex-direction:column;
+    gap: .8rem;
+  }
+  
+  /* section */
+  .signup-wrapper{
+    margin-top: 25%;
+  }
+  .signup-wrapper .signup-wrapper-box{
+    display: flex;
+    flex-direction:row;
+    gap: 20rem;
+    margin: 8rem 0;
+  }
+  /* signup section page */
+  #signIn-section-page,
+  #signup-section-page{
+    display: none;
+  }
+  
+  
+  /* media quries */
+  @media(max-width:1440px){
+    .poster-relative-position{
+      margin: 0 auto;
+      
+    }
+  
+    .heading h1{
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    .form-section-btn{
+      flex-direction: column;
+     
+     margin: 0 auto;
+    
+  
+       
+    }
+    .form-section-btn button{
+      margin-bottom: .5rem;
+    }
+  
+  }
+  
+  @media(max-width:768px){
+    #white-img{
+      display: block;
+  
+    }
+   
+    #main-img{
+      display: none;
+    }
+  
+    .icon-section h4,
+    .icon-section h1{
+      font-size: 1rem;
+      
+    }
+      .form-section-btn button{
+  
+      width: 100%;
+    }
+  
+    
+  }
+  @media(max-width:375px){
+      .icon-section h4{
+        display: none;
+      }
+      .icon-section h4{
+        font-size: 1.5rem;
+      }
+           
+          .form-section-btn button{
+            font-size:.7rem;
+            
+            
+          }
+  
+  }
+  
+  .safety {
+    border-bottom: 3px solid rgba(196, 196, 189, 0.867);
+    object-fit:contain;
+  }
+  .community{
+    border-bottom: 3px solid rgba(196, 196, 189, 0.867);
+    object-fit: contain;
+  }
+  .safety:hover{
+    border-bottom: 3px solid black;
+    transition: all .2s linear;
+  }
+  .community:hover{
+    border-bottom: 3px solid black;
+    transition: all .2s linear;
+  }
+  .city{
+    border-bottom: 3px solid rgba(196, 196, 189, 0.867);
+    
+  }
+  .city:hover{
+    border-bottom: 3px solid black;
+    transition: all .2s linear;
+  }
+  .learnuber{
+    border-bottom: 3px solid  rgba(255, 255, 255, 0.867);
+  }
+  .signdown{
+    height: 150px;
+  }
+  .signunder{
+    padding-bottom: 60px;
+    border-bottom: 1px solid black;
+  }
+
+  .signunderarrow{
+    padding-bottom: 70px;
+    padding-left: 50px;
+  
+  }
+  .signupunder{
+    padding-bottom: 60px;
+    border-bottom: 1px solid black
+  }
+  
+  .footercontent{
+    margin-top:50px;
+  }
+  .location{
+    position: relative;
+    bottom: 35px;
+    left: 300px;
+  }
+  .downlodlogo{
+    width: 40%;
+  }
+  .downlodlogo1{
+    width: 38%;
+  }
+  .langmap{
+    padding-left: 50%;
+  }
+  .privacy{
+    padding-left: 50%;
+  }

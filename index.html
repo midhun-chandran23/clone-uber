@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- aos animtion -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>uber clone</title>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-black p-3 fs-5   navbar ">
+    <div class="container-fluid me-4 ms-4 ">
+      <a class="navbar-brand  fs-3 " href="#" id="uberlogohover">Uber</a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-white rounded-1"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+           <li class="nav-item dropdown  hover-bg  ">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              company
+            </a>
+            <ul class="dropdown-menu  mt-4 p-3   fs-4">
+              <li><a class="dropdown-item  text-gray" href="#">About us</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Our offerings</a></li>
+              <li><a class="dropdown-item text-gray" href="#">How Uber works</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Global citizenship</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Newsroom</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Investor relations</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Blog</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item hover-bg ">
+            <a class="nav-link active text-white" aria-current="page" href="#">Safety</a>
+          </li>
+          <li class="nav-item hover-bg ">
+            <a class="nav-link text-white" href="#">Help</a>
+          </li>
+         
+         
+        </ul>
+          <ul class="navbar-nav  mb-2 mb-lg-0 gap-4">
+              <li class="nav-item dropdown  hover-bg  ">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span><i class="fa-solid fa-language"></i></span> EN
+                </a>
+                <ul class="dropdown-menu  mt-4 p-3   fs-4">
+                  <li><a class="dropdown-item  text-gray" href="#">English</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Chinese</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">German</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Hindi</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Malayalam</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Tamil</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Telugu</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Japanese</a></li>
+                </ul>
+              </li>
+                <li class="nav-item dropdown  hover-bg  ">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Product
+                  </a>
+                  <ul class="dropdown-menu   mt-4 p-3   fs-4">
+                    <li><a class="dropdown-item  text-gray" href="#"><span><i class="fa-solid fa-house"></i></span> Home</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-motorcycle"></i></span> Ride</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-car"></i></span> Drive</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-bowl-food"></i></span> Eat</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-wine-bottle"></i></span> Merchants</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"> <span><i class="fa-solid fa-truck-fast"></i></span>Freight</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-motorcycle"></i></span>Bike & scoot</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-truck-fast"></i></span>Transit</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-suitcase"></i></span>Business</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-money-bill"></i></span> Money</a></li>
+                    
+                  </ul>
+                </li>
+              <li class="nav-item hover-bg">
+                <a class="nav-link text-white" id="signIn" href="#">Log in</a>
+              </li>
+              <li class="nav-item hover-bg" id="signup">
+                <a class="nav-link text-white" href="#">Sign up</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- poster -->
+   <main>
+    <!-- sign-up -->
+    <section id="signup-section-page" class="z-1 bg-white text-black top-0 bottom-0 w-100 opacity-75 container-fluid">
+         <div class="container" id="section">
+          <h5 id="signUp-close" class="text-end mt-5 fw-bolder text-black">X</h5>
+          
+             <div class="signup-wrapper row " >
+                <div class="  signup-wrapper-box   " >
+                  <div class="signup-box col-lg-4  hover-bg">
+                    <h2 class="fw-bolder ">Sign up to drive and deliver <span><i class="fa-solid fa-arrow-right "></i></span></h2>
+                    <hr>
+                  </div>
+                  <div class="signup-box  col-lg-4  hover-bg">
+                    <h2 class="fw-bolder">Create a rider account <span><i class="fa-solid fa-arrow-right "></i></span></h2>
+                    <hr>
+                  </div>
+                </div>
+                <div class="row signup-wrapper-box1 ">
+                  <div class="signup-box   col-lg-6  hover-bg">
+                    <h2 class="fw-bolder" >Order delivery with uber Eats  <span><i class="fa-solid fa-arrow-right "></i></span></h2>
+                    <hr>
+                  </div>
+                  <div class="signup-box  col-lg-6  hover-bg" id="signuphover">
+                    <h2 class="fw-bolder" >Sign up for uber for Uber business <span><i class="fa-solid fa-arrow-right "></i></span></h2>
+                    <hr>
+                  </div>
+                </div>
+             </div>
+             
+         </div>
+    </section>
+ <!-- sign up ends here -->
+      <div class="poster container-fluid p-0 position-relative m-0 " data-aos="zoom-in-up">
+        <div class="col-12">
+          <img id="main-img" class="w-100 object-fit-cover  " style="height:700px;" src="./img/Rider getting into car.jpg" alt="poster-image">
+          <img id="white-img" src="./img/white.jpg" alt="white" class="w-100 object-fit-cover"style="height:700px;">
+
+        </div>
+        <!-- relative box -->
+        <div class=" position-absolute poster-relative-position  bg-white    rounded-4  p-4 
+              ">
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex flex-row  justify-content-around  ">
+              <div class="icon-section ride">
+                <h3><i class="fa-solid fa-car"></i></h3>
+                <h4>Ride</h4>
+              </div>
+              <div class="icon-section drive">
+                <h3 class="text-center"><i class="fa-brands fa-nfc-symbol"></i></h3>
+                <h4>Drive or Deliver</h4>
+              </div>
+              <div class="icon-section rent">
+                <h3 class="text-center"><i class="fa-brands fa-creative-commons-share"></i></h3>
+                <h4>Rent your fleet</h4>
+              </div>
+            </div>
+            <!-- underline -->
+            <div class="text-black  ">
+              <hr>
+      
+            </div>
+      
+            <div class="heading">
+              <h4 class="text-black fw-bolder " id="heading-text">Request a ride now</h4>
+            </div>
+            <div class="form-section">
+              <form class="d-flex flex-column gap-2 ">
+                <input class="p-3 rounded-2 border-1 inp-col" type="search" placeholder="Enter pickup location">
+                <input class="p-3 rounded-2 border-1 inp-col" type="search" placeholder="Enter destination">
+              </form>
+            </div>
+            <div class="d-flex flex-column ">
+              <div class="deliver-section">
+                <h2 class="box-para fs-6">Drive on the platform with the largest network of active riders. </h2> <br>
+                <button class="bg-black text-white fw-bold p-2 rounded-1 fs-6 border-0 drive-rent-btn" >sign up to
+                  drive </button> 
+                <h4>Learn more about driving and delivering</h4>
+                <h5>
+                  <hr>
+                </h5>
+              </div>
+            </div>
+      
+            <div class="  w-100 ">
+              <div class="form-section-btn  w-100  ">
+                <button class="bg-black text-white fw-bold rounded-2   border-0 ">Request now</button>
+                <button class="text-white  fw-bold   border-0 rounded-2 schedule-btn hover-bg">Schedule for Later</button>
+              </div>
+            </div>
+          </div>
+      
+   
+        </div>
+      </div>
+      
+      
+      
+      <section class="container-fluid  p-0 position-relative " data-aos="fade-down">
+      
+        <div class="col-12 ">
+          <img class="longposter-img w-100  img-fluid" style="height: 300px;" src="./img/HP-U4B-NYC-bkg.png"
+            alt="poster-image">
+        </div>
+        <div class="col-12 position-absolute top-50 start-50 translate-middle text-center">
+             <h2>The Uber you know, reimagined for business</h2>
+             <p>A platform for managing global rides and meals, and local deliveries, for companies of any size.</p>
+             <button class="bg-black text-white fw-bold p-2">Get started</button>
+        </div>
+      
+      </section>
+
+      <section class="mt-5" data-aos="fade-down">
+        <div class="container ">
+            <h1 class="mt-4 mb-4 fw-bold text-center">Ride with Uber</h1>
+        </div>
+        <div class="container ">
+            <div class="box-wrapper  row gy-lg-5 gy-0">
+              <!-- box-1 -->
+                 <div class="box d-flex flex-sm-row flex-column  align-items-center col-lg-6  col-sm-12 ">
+                      <div class="img-box">
+                           <img class="" src="./img/Uber Auto 3D Icon.png" alt="uber-auto" data-aos="flip-down">
+                      </div>
+                      <div class="img-description d-flex flex-sm-row flex-column text-center justify-content-center align-items-center">
+                           <div >
+                            <h3 class="fw-bold fs-1">Uber Auto</h3>
+                            <p>Get Affordable uber auto rides with no haggling .request uber auto and ride comfortably around your city</p>
+                           </div>
+                           <h2><i class="fa-solid fa-arrow-right"></i></h2>
+                      </div>
+                 </div>
+                 <!-- box-2 -->
+                    
+                    <div class="box d-flex flex-sm-row flex-column  align-items-center col-lg-6  col-sm-12">
+                      <div class="img-box">
+                        <img src="./img/Uber Moto 3D Icon.png" alt="uber-motor" data-aos="flip-down">
+                      </div>
+                      <div class="img-description d-flex flex-sm-row flex-column text-center justify-content-center align-items-center">
+                        <div>
+                          <h3 class="fw-bold fs-1">Uber Motor</h3>
+                          <p>Get Affordable uber bikes at your doorstep .skip the crowd and zip through traffic with uber moto</p>
+                        </div>
+                        <h2><i class="fa-solid fa-arrow-right"></i></h2>
+                      </div>
+                    </div>
+                      <!-- box-3 -->
+                      
+                      <div class="box d-flex flex-sm-row flex-column  align-items-center col-lg-6  col-sm-12">
+                        <div class="img-box">
+                          <img src="./img/3D icon of a sedan car plus a 2D icon.png" alt="sedan-car" data-aos="flip-up">
+                        </div>
+                        <div class="img-description d-flex flex-sm-row flex-column text-center justify-content-center align-items-center">
+                          <div>
+                            <h3 class="fw-bold fs-1">Uber Rentals</h3>
+                            <p>Book rentals to save time with one car and drive for your multi stop trips</p>
+                          </div>
+                          <h2><i class="fa-solid fa-arrow-right"></i></h2>
+                        </div>
+                      </div>
+                      <!-- box-4 -->
+                      
+                      <div class="box d-flex flex-sm-row flex-column  align-items-center col-lg-6  col-sm-12">
+                        <div class="img-box">
+                          <img src="./img/Uber Hourly.jpg" alt="ubercar" data-aos="flip-up">
+                        </div>
+                        <div class="img-description d-flex flex-sm-row flex-column text-center justify-content-center align-items-center">
+                          <div>
+                            <h3 class="fw-bold fs-1">Uber Intercity</h3>
+                            <p>Get Affordable uber auto rides with no haggling .request uber auto and ride comfortably around your city</p>
+                          </div>
+                          <h2><i class="fa-solid fa-arrow-right"></i></h2>
+                        </div>
+                      </div>
+                 
+            </div>
+        </div>
+      </section>
+
+    <!-- safety -->
+
+    <section class="mt-5" data-aos="fade-down">
+       <div class="container mb-5">
+           <h4 class="fs-1 fw-bold">Focused on safety, wherever you go</h4>
+       </div>
+
+       <div class="container ">
+             <div class="row d-flex justify-content-around ">
+                 <div class="box  col-lg-4 col-12 border mb-5 w-50">
+                     <div class="img-container">
+                        <img class="w-100 object-fit-cover img-fluid h-auto"  src="./img/Safety_Home_Img2x.jpg" alt="overhead view of cars">
+                     </div>
+                     <div class="img-description">
+                         <h5>Our commitment to your safety</h5>
+                         <p>With every safety feature and every standard in our Community Guidelines, we're committed to helping to create a safe
+                        environment for our users.</p>
+                        <div class="row" >
+                          <p ><span class="community">Read about our Community Guidelines</span> <span class="safety ms-5">See all safety features</span></p> 
+                          
+                        </div>
+                     </div>
+                 </div>
+
+                 <!-- box-2 -->
+                <div class="box  col-lg-4 col-12 border mb-5 w-50">
+                  <div class="img-container">
+                    <img class="w-100 object-fit-cover img-fluid h-auto" src="./img/Overhead view of cars driving in a city.jpg" alt="overhead view of cars">
+                  </div>
+                  <div class="img-description">
+                    <h5>Our commitment to your safety</h5>
+                    <p>With every safety feature and every standard in our Community Guidelines, we're committed to helping to create a
+                      safe
+                      environment for our users.</p>
+                    <div class="row">
+                      <p ><span class="city">View all Cities</span></p>
+                        
+                    </div>
+                  </div>
+                </div>
+            </div>
+       </div>
+    </section>
+    <!-- ...................................................................................... -->
+    <section>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="row col-4 hover-bg">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="60" fill="currentColor" class="bi bi-people " viewBox="0 0 16 16">
+            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+          </svg> 
+         </div>
+         <div class="text-black">
+          <h5>About Us</h5>
+         </div>
+         <div class="text-black">
+          <p class="fs-6">
+            Find out how we started, what drives us,<br>and how 
+            we're reimagining how the world moves.
+          </p>
+          <br>
+          <h6><span class="learnuber">Learn More About Uber</span></h6>
+
+         </div>
+        </div>
+<!-- ............................................................................................................... -->
+
+      <div class="row col-4 hover-bg">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="60" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+            <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+            <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+          </svg>
+         </div>
+         <div class="text-black">
+          <h5>Newsroom</h5>
+         </div>
+         <div class="text-black">
+          <p class="fs-6">
+            See announcements about our latest releases,<br> initiatives, and partnerships.
+          </p>
+          <br>
+          <h6><span class="learnuber">Go to Newsroom</span></h6>
+
+         </div>
+
+
+      </div>
+
+      <!-- .............................................................. -->
+
+      <div class="row col-4 hover-bg">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="60" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+          </svg>
+         </div>
+         <div class="text-black">
+          <h5>Global citizenship</h5>
+         </div>
+         <div class="text-black">
+          <p class="fs-6">
+            Read about our commitment to making a positive <br>
+            impact in the cities we serve.
+          </p>
+          <br>
+          <h6><span class="learnuber">See our partnerships</span></h6>
+
+         </div>
+
+
+      </div>
+    </div>
+    </section>
+    
+    <section class="mt-5 mb-8">
+        <div class="container bg-light ">
+          <div>
+            <h5 class="fs-1">It’s easier in the apps</h5>
+
+        </div>
+        <div class="container mt-5 mb-5 p-4 ">
+            <div class="box-wrapper row d-flex justify-content-around gy-sm-3 ">
+                <div class="box col-lg-5 col-12 d-flex  bg-color border border-secondary p-2 rounded-4 ">
+                    <div class="img-box">
+                        <img src="./img/Download Uber App.png" class="rounded-4 " alt="rider app logo">
+                    </div>
+                    <div class="img-small-desc  d-flex align-items-center d-flex flex-column flex-sm-row  ">
+                      <p class="me-4 fs-4 fw-bolder  offset-1 ">Download the Uber app <br> <span class=" fs-5 fw-light"> Scan to Download</span></p>
+                      <h4><i class="fa-solid fa-arrow-right"></i></h4>
+                        
+                      
+                      
+                    </div>
+                </div>
+
+                <!-- box-2 -->
+
+                <div class="   col-lg-5 col-12  d-flex  bg-color border border-secondary p-2 rounded-4 gy-3">
+                  <div class="img-box">
+                    <img src="./img/Download Driver App.png" class="rounded-4" alt="rider app logo">
+                  </div>
+                  <div class="img-small-desc  d-flex flex-column flex-sm-row align-items-center">
+                    <p class="me-4 fs-4 fw-bolder offset-1 ">Download the Driver app <br> <span class="fs-5 fw-light">Scan to Download</span></p>
+                    <h4><i class="fa-solid fa-arrow-right"></i></h4>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class=" p-3" data-aos="fade-down" >
+        <div class="container bg-light mt-5 signdown">
+             <div class="signup-out-wrapper d-flex flex-md-row flex-column  justify-content-between ">
+                 <div class="box d-flex flex-md-row flex-column  align-items-center ">
+                    <h3 class="fs-1 signunder fw-bolder" >Sign up to drive </h3>
+                    <i class="fa-sharp fa-solid fa-arrow-right signunderarrow"></i>
+                  
+                 </div>
+
+                 <!-- sign out -->
+                  <div class="box d-flex flex-md-row flex-column  align-items-center ">
+                    <h3 class="fs-1 fw-bolder signupunder " >Sign up to ride</h3>
+                    <i class="fa-sharp fa-solid fa-arrow-right signunderarrow"></i>
+                  </div>
+                  
+             </div>
+        </div>
+    </section>
+
+
+   </main>
+
+   <!-- footer section start here -->
+   <footer class="bg-black text-white p-4 position-relative footerback">
+      <div class="container ">
+        <div class="uber-log row mb-4"><h4>Uber</h4></div>
+        <div class="help fw-bold row mb-4"><h6>Vist help center</h6></div>
+           <div class="footer-wrapper  d-flex justify-content-around flex-row flex-wrap footercontent">
+            <ul class="footer-section  list-unstyled">
+                <li class="footer-section-title fw-bold fs-4">Company</li>
+                <li class="fs-5">About us</li>
+                <li class="fs-5">Our offerings</li>
+                <li class="fs-5">Newsroom</li>
+                <li class="fs-5">Investors</li>
+                <li class="fs-5">Blog</li>
+                <li class="fs-5">Careers</li>
+                <li class="fs-5">AI</li>
+                <li class="fs-5">Gift card</li>
+            </ul>
+            <ul class="footer-section  list-unstyled  ">
+              <li class="footer-section-title fw-bold fs-4">Products</li>
+              <li class="fs-5">Ride</li>
+              <li class="fs-5">Drive</li>
+              <li class="fs-5">Deliver</li>
+              <li class="fs-5">Eat</li>
+              <li class="fs-5">Uber for business</li>
+              <li class="fs-5">Uber freight</li>
+            </ul>
+            <ul class="footer-section  list-unstyled ">
+              <li class="footer-section-title fw-bold fs-4">Global citizenship</li>
+              <li class="fs-5">safety</li>
+              <li class="fs-5">Diversity and inclusion</li>
+              <li class="fs-5">substainability</li>
+            </ul> 
+               <ul class="footer-section  list-unstyled ">
+                  <li class="footer-section-title fw-bold fs-4">Travel</li>
+                  <li class="fs-5">Airports</li>
+                  <li class="fs-5">cities</li>
+               </ul>
+           </div>
+           <div class="container">
+            <div class="row w-25">
+           <div class="d-flex justify-content-between mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+              <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+           </div>
+          </div>
+          <!-- ............................................................. -->
+          <div class="row langmap">
+           <div class="float-end location w-50 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="50" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+              <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+            </svg><span class="fw-bold">  English</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="50" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+              <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg><span class="fw-bold">
+                  Thiruvanathapuram
+              </span>
+           </div>
+          </div>
+           </div>
+           <div class="d-flex w-25 justify-content-evenly download pb-5 pt-5">
+            <img src="./img/Download the Uber app for Android.svg" class="downlodlogo">
+            <img src="./img/Download the Uber app for IOS.svg" class="downlodlogo1">
+           </div>
+           <div class="container d-flex ">
+           <div class="row w-25 ">
+            <p class="fs-6"> © 2023 Uber Technologies Inc.</p>
+           </div>
+           <div class="row w-75 privacy">
+          <p class=> Privacy &nbsp; Accessibility &nbsp; Terms </p>
+           </div>
+          </div>
+      </div>
+   </footer>
+
+
+<!-- js -->
+<script src="./script.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/72e1a8d80d.js" crossorigin="anonymous"></script>
+
+
+  <!-- aniamtion aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+    AOS.init();
+ </script>
+</body>
+</html>
